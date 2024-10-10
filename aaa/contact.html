@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="./porticon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&amp;display=swap" rel="stylesheet">
+        <title>oessona.dev</title>
+        <link href="/style/styleContact.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"><nav>
+        <h3 class="logo">oessona.dev</h3>
+        <ul>
+            <li><a href="home.html">Home</a>
+            </li><li><a href="about.html">About</a>
+            </li><li><a href="skills.html">Skills</a>
+            </li><li><a href="contact.html">Contact</a>
+            </li><li class="test"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu">
+                <path d="M4 6l16 0"></path><path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+            </svg></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav closed-menu" id="mobileNav">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x">
+            <path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path>
+        </svg>
+    </span>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a>
+        </li><li><a href="skills.html">Skills</a>
+        </li><li><a href="contact.html">Contact</a>
+        </li>
+    </ul>
+    </div>
+    <div class="contact-form">
+        <h1>Contact Form</h1>
+        <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="eg. David">
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="eg. david@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+            <label for="">Message:</label>
+            <textarea id="message" placeholder="Message"></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="sendMessage();">Send Message</button>
+        </div>
+    </div>   
+    <script src="/js/contact.js"></script>
+</body>
+</html>
